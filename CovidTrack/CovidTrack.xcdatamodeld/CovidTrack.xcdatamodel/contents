@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Country" representedClassName="Country" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="myDates" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CountryDate" inverseName="myCountry" inverseEntity="CountryDate"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="CountryDate" representedClassName="CountryDate" syncable="YES" codeGenerationType="class">
+        <attribute name="alive" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="newCases" optional="YES" attributeType="String"/>
+        <attribute name="totalCases" optional="YES" attributeType="String"/>
+        <attribute name="totalDeaths" optional="YES" attributeType="String"/>
+        <attribute name="totalPeopleVax" optional="YES" attributeType="String"/>
+        <attribute name="totalVax" optional="YES" attributeType="String"/>
+        <relationship name="myCountry" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="myDates" inverseEntity="Country"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="date"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="StateDate" representedClassName="StateDate" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="totalCases" optional="YES" attributeType="String"/>
+        <attribute name="totalDeaths" optional="YES" attributeType="String"/>
+        <relationship name="myState" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TheState" inverseName="myDates" inverseEntity="TheState"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="name"/>
+                <constraint value="date"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="TheState" representedClassName="TheState" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="myDates" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StateDate" inverseName="myState" inverseEntity="StateDate"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="World" representedClassName="World" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="myDates" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WorldDate" inverseName="myWorld" inverseEntity="WorldDate"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="WorldDate" representedClassName="WorldDate" syncable="YES" codeGenerationType="class">
+        <attribute name="active" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="newCases" optional="YES" attributeType="String"/>
+        <attribute name="recovered" optional="YES" attributeType="String"/>
+        <attribute name="totalCases" optional="YES" attributeType="String"/>
+        <attribute name="totalDeaths" optional="YES" attributeType="String"/>
+        <relationship name="myWorld" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="World" inverseName="myDates" inverseEntity="World"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="date"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="Country" positionX="-63" positionY="-9" width="128" height="59"/>
+        <element name="CountryDate" positionX="-63" positionY="-18" width="128" height="149"/>
+        <element name="StateDate" positionX="-54" positionY="18" width="128" height="104"/>
+        <element name="TheState" positionX="-45" positionY="45" width="128" height="59"/>
+        <element name="World" positionX="-45" positionY="45" width="128" height="59"/>
+        <element name="WorldDate" positionX="-36" positionY="54" width="128" height="134"/>
+    </elements>
+</model>
