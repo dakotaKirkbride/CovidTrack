@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/PortfolioSite/static/css/main.a6528a85.chunk.css",
-    "main.js": "/PortfolioSite/static/js/main.601f76c2.chunk.js",
-    "main.js.map": "/PortfolioSite/static/js/main.601f76c2.chunk.js.map",
-    "runtime-main.js": "/PortfolioSite/static/js/runtime-main.b605df66.js",
-    "runtime-main.js.map": "/PortfolioSite/static/js/runtime-main.b605df66.js.map",
-    "static/js/2.6db2f02b.chunk.js": "/PortfolioSite/static/js/2.6db2f02b.chunk.js",
-    "static/js/2.6db2f02b.chunk.js.map": "/PortfolioSite/static/js/2.6db2f02b.chunk.js.map",
-    "static/js/3.f6438482.chunk.js": "/PortfolioSite/static/js/3.f6438482.chunk.js",
-    "static/js/3.f6438482.chunk.js.map": "/PortfolioSite/static/js/3.f6438482.chunk.js.map",
+    "main.css": "/PortfolioSite/static/css/main.9d6539a5.chunk.css",
+    "main.js": "/PortfolioSite/static/js/main.42a56112.chunk.js",
+    "main.js.map": "/PortfolioSite/static/js/main.42a56112.chunk.js.map",
+    "runtime-main.js": "/PortfolioSite/static/js/runtime-main.531f62ee.js",
+    "runtime-main.js.map": "/PortfolioSite/static/js/runtime-main.531f62ee.js.map",
+    "static/js/2.c27a1e6d.chunk.js": "/PortfolioSite/static/js/2.c27a1e6d.chunk.js",
+    "static/js/2.c27a1e6d.chunk.js.map": "/PortfolioSite/static/js/2.c27a1e6d.chunk.js.map",
+    "static/js/3.797f0289.chunk.js": "/PortfolioSite/static/js/3.797f0289.chunk.js",
+    "static/js/3.797f0289.chunk.js.map": "/PortfolioSite/static/js/3.797f0289.chunk.js.map",
     "index.html": "/PortfolioSite/index.html",
-    "static/css/main.a6528a85.chunk.css.map": "/PortfolioSite/static/css/main.a6528a85.chunk.css.map",
-    "static/js/2.6db2f02b.chunk.js.LICENSE.txt": "/PortfolioSite/static/js/2.6db2f02b.chunk.js.LICENSE.txt",
+    "static/css/main.9d6539a5.chunk.css.map": "/PortfolioSite/static/css/main.9d6539a5.chunk.css.map",
+    "static/js/2.c27a1e6d.chunk.js.LICENSE.txt": "/PortfolioSite/static/js/2.c27a1e6d.chunk.js.LICENSE.txt",
     "static/media/DakotaKirkbrideResume.15161928.pdf": "/PortfolioSite/static/media/DakotaKirkbrideResume.15161928.pdf",
     "static/media/azureFunds.4fded1b7.svg": "/PortfolioSite/static/media/azureFunds.4fded1b7.svg",
     "static/media/cPlusPlusLogo.9f8fc37d.svg": "/PortfolioSite/static/media/cPlusPlusLogo.9f8fc37d.svg",
@@ -36,9 +36,9 @@
     "static/media/undraw_feeling_proud_qne1.0faec589.svg": "/PortfolioSite/static/media/undraw_feeling_proud_qne1.0faec589.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b605df66.js",
-    "static/js/2.6db2f02b.chunk.js",
-    "static/css/main.a6528a85.chunk.css",
-    "static/js/main.601f76c2.chunk.js"
+    "static/js/runtime-main.531f62ee.js",
+    "static/js/2.c27a1e6d.chunk.js",
+    "static/css/main.9d6539a5.chunk.css",
+    "static/js/main.42a56112.chunk.js"
   ]
 }
